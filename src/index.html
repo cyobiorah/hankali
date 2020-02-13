@@ -8,6 +8,43 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="manifest" href="manifest.webmanifest">
   <meta name="theme-color" content="#1976d2">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style type="text/css">
+    #dropdownemp ul.ui-select-choices.dropdown-menu{
+        z-index: 1000 !important;
+        position: absolute !important;
+        width: 298px !important;
+        background: white !important;
+        border: 1px solid gainsboro !important;
+        border-top: 0 !important;
+        box-shadow: 0 1px 1px gainsboro !important;
+    }
+    #dropdownemp span.btn.btn-default.btn-secondary.form-control.ui-select-toggle {
+        border: 1px solid gainsboro;
+        display: block;
+        padding: 10px 20px;
+        border-radius: 0;
+        outline: none !important;
+        -webkit-appearance: none;
+        height: 20px;
+    }
+    .ui-select-multiple{height: auto; padding: 8px 15px !important; border: 1px solid gainsboro;border-radius: 3px;}
+    .ui-select-multiple .ui-select-choices {margin-top: 1px; list-style: none; padding: 0; margin: 0;}
+    .mat-checkbox-frame {transition: border-color 90ms cubic-bezier(0,0,.2,.1); border-width: 0px !important; border-style: solid; background: transparent;}
+    .mat-checkbox-checked .mat-checkbox-checkmark {opacity: 1; background: #029EDC; border-radius: 4px; border: 0;}
+    .mat-paginator-icon {color: #029EDC;}
+    .mat-paginator-container {justify-content: space-between !important; padding-left: 25px !important; margin-bottom: 2rem !important; padding-right: 50px !important; margin-top: 1rem !important;}
+    .mat-paginator-page-size-label {margin: 0 4px; font-weight: bold; font-style: italic;}
+    .mat-paginator-range-label{font-weight: bold; font-style: italic;}
+    .table thead tr td, .table thead tr th {font-weight: bold; color: #333333;font-family: "Hind";}
+    .ui-select-multiple .ui-select-match-item {outline: 0; margin: 0 3px 3px 0; padding: 5px 20px 5px 10px; display: inline-flex; width: fit-content; justify-content: space-between;}
+    .ui-select-match .close {font-size: 1.6em; line-height: 0.75;  margin-right:10px;}
+    .ui-select-multiple .ui-select-match-item { outline: 0; margin: 0 3px 3px 0; padding: 5px 20px 5px 10px; display: inline-flex; width: fit-content; justify-content: space-between; background-color: #029EDC; color: white; border-color: gainsboro; -webkit-appearance: none; border-radius: 4px;}
+    a.dropdown-item{text-decoration: none !important; padding-top: 5px !important; padding-bottom: 5px !important; font-family: "Hind" !important;}
+    .ui-select-choices-row.active > a {color: #fff;background-color: #029EDC !important;}
+    #ember481 .d-hotline {background-color: #029EDC !important; color: #FFFFFF !important; border-color: transparent #f3eae8 transparent transparent;}
+</style>
 </head>
 <body>
   <app-root></app-root>

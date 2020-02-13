@@ -1,0 +1,325 @@
+/****************************
+Company: Eluzini
+Product: Eluzini
+Developer: Patrick Jesam
+patrickikoi@gmail.com
+Copyright © 2019 Eluzini
+****************************/
+header{
+    height: 80px;
+}
+ul.home-links li a{
+    padding: 2rem 1.2rem;
+}
+ul.home-links li:last-child a:last-child{
+    padding: .5rem 1rem;
+    margin-left: .5rem;
+    font-size: 14px;
+}
+.logo-img {
+    height: 16px !important;
+    width: auto;
+}
+.h-heading{
+    line-height: 45px;
+    font-family: "Hind";
+    font-size: 30px;
+    letter-spacing: 0.004em;
+    color: #029EDC;
+    font-weight: 300;
+}
+.h-title{
+    font-style: normal;
+    font-weight: normal;
+    line-height: 27px;
+    font-size: 18px;
+    letter-spacing: 0.004em;
+    color: #000000;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+}
+p{
+    line-height: normal;
+}
+p, a, label, span{
+    font-family: "Hind";
+    font-weight: 300;
+}
+.h-subtitle{
+    padding-top: 0;
+    margin: 1rem 0 1.5rem 0;
+    line-height: normal;
+}
+.h-border-left{
+    border-left: 2px solid #029EDC;
+    padding-left: 1rem;
+}
+.sec-one{
+    padding: 100px 0;
+    background: url('/assets/images/bgdone.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: #fff7f4;
+    background-position: right;
+}
+.w-4{
+    flex: 1 0 19%;
+}
+.sec-two{
+    padding: 80px 0;
+    /* background: url('../../../assets/images/fteqq.png'); */
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    background-color: #ffffff;
+}
+.sec-three{
+    padding: 60px 0;
+    background-color: white;
+    /* background-color: #ffffff; */
+}
+.sec-four{
+    padding-bottom: 100px;
+    background: url('/assets/images/sec_four_fill2.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: white;
+    background-size: 300px;
+}
+.sec-five{
+    background: radial-gradient(297.11px at 58.07% 50%, #029EDC 0%, #d2502c 100%);
+}
+/* .sec-four::after{
+    content: "";
+    padding-bottom: 60px;
+    background: url('/assets/images/sec_four_fill2.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: white;
+    background-size: 300px;
+} */
+.list-about-eluzini img{
+    margin-right: 1rem;
+    width: auto;
+    height: 20px;
+    margin-top: .3rem;
+}
+.list-about-eluzini p{
+    padding-top: 0;
+}
+.list-about-eluzini {
+    margin-top: 1rem;
+}
+.btn-link{
+    text-decoration: none;
+}
+.h-rounded-pane {
+    display: inline-block;
+    background: linear-gradient(207.15deg, #029EDC6b -278.26%, #fcfdfe85 161.82%);
+    border-radius: 50%;
+    height: 84px;
+    width: 84px;
+}
+.h-rounded-pane img {
+    width: 25px;
+    height: auto;
+    position: absolute;
+    bottom: 4px;
+    left: 5px;
+}
+.h-c-img{
+    width: 560px;
+    height: auto;
+}
+.contact-card{
+    margin: 0 0 0 60px;
+    border: 1px solid rgba(206, 87, 54, 0.15);
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.07);
+}
+.contact-card h3{
+    font-size: 18px !important;
+}
+.contact-card img {
+    height: 57px;
+    width: auto;
+    margin-right: 1rem;
+}
+.m-3{
+    margin: 3rem 0;
+}
+.text-white{
+    color: #ffffff !important;
+}
+.h-bg-white{
+    background: #FFFFFF !important;
+    border-radius: 4px;
+    color: #029EDC !important;
+}
+.h-bg-alt{
+    background-color: #FAFBFC;
+}
+.footer-links li {
+    padding: .5rem 1rem;
+}
+.footer-links li a{
+    font-size: 14px;
+}
+.footer-links li:last-child {
+    padding-right: 0;
+}
+.li-outcast{
+    border-left: .5px solid gainsboro;
+    border-right: .5px solid gainsboro;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.social-links li a{
+    padding: 1rem 1.2rem;
+    border: 1px solid #F7E4DF;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: 0 1rem;
+    padding: 1.2rem 1.1rem .6rem;
+}
+.social-links li a img{
+    height: auto;
+    width: 19px;
+}
+.p-sec-one{
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+.p-sec-two{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+}
+.btn-pricing{
+    display: block;
+    width: 100%;
+    border: 1px solid #029EDC;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    background: white;
+    color: #029EDC !important;
+    font-weight: bold;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    font-size: 15px;
+    margin-top: 3.2rem;
+}
+.btn-pricing-default{
+    display: block;
+    width: 100%;
+    border: 1px solid #029EDC;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    background: #029EDC;
+    color: white !important;
+    font-weight: bold;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    font-size: 15px;
+    margin-top: 3.2rem;
+}
+.pricing-table .list-about-eluzini img {
+    margin-right: 1rem;
+    width: auto;
+    height: 16px;
+    margin-top: 0;
+}
+.pricing-table .list-about-eluzini p{
+    padding-top: 0;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: left;
+}
+.pricing-table h3{
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+.pricing-table span{
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 66px;
+    text-align: center;
+    color: #242F40;
+    margin-left: .3rem;
+    margin-right: .3rem;
+}
+.p-sec-three{
+    padding-bottom: 60px;
+    background: url('/assets/images/side-df.png'), url('/assets/images/side-df-r.png');
+    background-repeat: no-repeat;
+    background-position: left, bottom right;
+    background-size: 20%, 25%;
+}
+.pricing-table .recommended{
+    background: url('/assets/images/vec_recommended.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 35%;
+    overflow: hidden;
+}
+.recommended .r-tag{
+    font-size: 12px;
+    color: white;
+    right: 12px;
+    transform: rotate(39deg);
+    top: 36px;
+}
+.recommended{
+    transform: translate(0px, -40px);
+    height: 550px;
+    flex-direction: column;
+    align-items: center;
+    background-color: white !important;
+    border: 1px solid #029EDC;
+    box-sizing: border-box;
+    box-shadow: 0px 12px 50px rgba(0, 0, 0, 0.15);
+}
+.recommended h3{
+    margin-bottom: 37px;
+}
+.pricing-table p {
+    color: #5B6B82 !important;
+}
+.scroll-pricing{
+    height: 70%;
+    overflow-y: auto;
+}
+.scroll-pricing:hover{
+    overflow-y: scroll;
+}
+.p-height{
+    height: 630px;
+    overflow: hidden;
+}
+.h-it-w{
+    color: grey;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0px auto;
+}
+.contact-header{
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 18px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}

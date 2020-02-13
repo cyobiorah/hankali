@@ -1,0 +1,59 @@
+/****************************
+Company: Eluzini
+Product: Eluzini
+Developer: Patrick Jesam
+patrickikoi@gmail.com
+Copyright © 2019 Eluzini
+****************************/
+main section {
+    display: none;
+    padding: 20px 0 0;
+    border-top: .7px solid gainsboro;
+}
+main input[type="radio"] {
+    display: none;
+}
+main label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid transparent;
+}
+main label:hover {
+    cursor: pointer;
+}
+.tabs input:checked + label {
+    border-bottom: 3px solid #029EDC;
+    border-radius: 10px 10px 0px 0px;
+    color: #029EDC;
+}
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab1a:checked ~ #content1a,
+#tab1b:checked ~ #content1b,
+#tab1c:checked ~ #content1c,
+#tab1d:checked ~ #content1d,
+#tab1e:checked ~ #content1e,
+#tab1f:checked ~ #content1f,
+#tab1g:checked ~ #content1g,
+#tab1h:checked ~ #content1h {
+    display: block;
+}
+@media screen and (max-width: 800px) {
+    main label {
+        font-size: 0;
+    }
+    main label:before {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 500px) {
+    main label {
+        padding: 15px;
+    }
+}

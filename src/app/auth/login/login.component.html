@@ -1,0 +1,77 @@
+<div class="pad-login f-h pos-absolute d-flx al-i-c">
+    <div class="col-12 login-box py-2 d-flx j-c-c">
+        <div class="col-6 m-0 box bg-grey b-rad">
+
+        </div>
+
+        <div class="col-6 m-0 pt-3 pb-3 m-l-login pos-rel">
+            <div class="box card p-2 d-flx fd-c">
+                <div class="box-heading d-flx fd-s-b j-c-sb mb-2 mt-1">
+                    <div class="d-flx al-i-c">
+                        <img src="assets/images/menu.png" class="logo-img" alt="">
+                        <p class="logo-img ml-h inline" alt="hankali">Hankali</p>
+                        <!-- <img src="assets/images/eluzini.png" class="logo-img ml-1" alt=""> -->
+                        <p class="ml-2 m-0 t-sub-heading">Log into your account</p>
+                    </div>
+                </div>
+
+                <div class="box-content">
+                    <p class="text-grey t-normal mt-0">The WebApp designed to gatheer information, both personal and in large
+                        organizational institutions....reliable and accountable.
+                    </p>
+                    <!-- <p class="text-grey t-normal mt-0">The WebApp designed to make organisations more transparent <br />
+                        and employees more accountable with task execution</p> -->
+
+                    <form [formGroup]="loginForm" novalidate (ngSubmit)="onSubmit(loginForm.value)" class="mt-2">
+                        <div class="control-box mb-2">
+                            <label for="username" class="mb-hh">Username</label>
+                            <input type="text" formControlName="username" class="form-control text-input"
+                                placeholder="e.g 'testuser'" />
+                            <p *ngIf="loginForm.controls['username'].invalid && (loginForm.controls['username'].dirty)"
+                                style="padding-top:0;">
+                                <span class="error-control"
+                                    *ngIf="loginForm.controls['username'].errors.required">kindly enter your
+                                    username</span>
+                                <!-- <span class="error-control" *ngIf="loginForm.controls['username'].errors.email">kindly
+                                    enter a valid email</span> -->
+                            </p>
+                        </div>
+
+                        <div class="control-box mb-2">
+                            <label for="email" class="mb-hh">Password</label>
+                            <input type="password" formControlName="password" class="form-control text-input"
+                                placeholder="enter password here..." />
+                            <p *ngIf="loginForm.controls['password'].invalid && (loginForm.controls['password'].dirty)"
+                                style="padding-top:0;">
+                                <span class="error-control"
+                                    *ngIf="loginForm.controls['password'].errors.required">kindly enter your
+                                    password</span>
+                            </p>
+                        </div>
+
+                        <div class="control-box mb-2 d-flx j-c-sb">
+                            <label class="cb-con"> <span class="text-ash ff-hind">Remember me</span>
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <a href="javascript:;" class="text-default btn-link">Forgot Password?</a>
+                        </div>
+
+                        <div class="control-box mb-2">
+                            <button class="btn btn-default tt-cap" [disabled]="loginForm.pristine || loginForm.invalid">
+                                Sign In
+                                <div class="buttonspinner" *ngIf="submitted"></div>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- <p class="f-16 login-bottom-text">
+                <span class="text-ash">Don't have an account?</span>
+                <a routerLink="/signup" class="text-default btn-link ml-h f-16">Sign Up</a>
+            </p> -->
+        </div>
+    </div>
+</div>

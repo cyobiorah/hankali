@@ -1,0 +1,15 @@
+@import '../../../assets/styles/global/_generic.css';
+@import '../../../assets/styles/flexboxgrid.css';
+@import '../../../assets/styles/global/_website.css';
+
+.inline {
+    display: inline;
+    font-size: 21px;
+    font-weight: bold;
+    color: #029EDC;
+    opacity: .8;
+}
+
+li a {
+    cursor: pointer;
+}

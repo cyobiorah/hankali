@@ -5,6 +5,9 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { ContactComponent } from './website/contact/contact.component';
 import { PricingComponent } from './website/pricing/pricing.component';
+import { DashboardComponent } from './protected/dashboard/dashboard.component';
+import { AuthGuardService } from './app.guard';
+import { FormbuilderComponent } from './protected/formbuilder/formbuilder.component';
 
 
 const routes: Routes = [
@@ -13,7 +16,9 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'pricing', component: PricingComponent }
+  { path: 'pricing', component: PricingComponent },
+  { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuardService] },
+  { path: 'formbuilder', component: FormbuilderComponent, canActivate: [AuthGuardService] },
 ];
 
 @NgModule({

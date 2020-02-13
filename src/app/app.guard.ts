@@ -1,28 +1,22 @@
-import { Injectable, Inject } from "@angular/core";
-import { CanActivate, Router, ActivatedRouteSnapshot, RouterStateSnapshot } from "@angular/router";
-// import { LOCAL_STORAGE, SESSION_STORAGE, WebStorageService } from "angular-webstorage-service";
+import { Injectable } from '@angular/core';
+import { Router, CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 
-@Injectable()
+import { AuthService } from './services/auth.service';
+
+@Injectable({ providedIn: 'root' })
 export class AuthGuardService implements CanActivate {
-    private user: any = [];
-
-    constructor(private router: Router) {
-        this.user = JSON.parse(localStorage.getItem('user'));
-    }
+    constructor(
+        private router: Router,
+        private authenticationService: AuthService
+    ) { }
 
     canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
-        var token = localStorage.getItem('token');
-        if (token == null) {
-            this.router.navigate(['/login']);
-        } else {
-            if (this.user) {
-                if (route.data.roles && route.data.roles.indexOf(this.user.user_role) === -1) {
-                    // role not authorised so redirect to home page
-                    this.router.navigate(['/dashboard']);
-                    return false;
-                }
-                return true
-            }
+        const currentUser = this.authenticationService.currentLoggedValue;
+        console.log(currentUser);
+        if (currentUser) {
+            return true;
         }
+        this.router.navigateByUrl('/login');
+        return false;
     }
 }

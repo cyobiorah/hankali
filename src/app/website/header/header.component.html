@@ -13,10 +13,12 @@
             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
                 <ul class="d-flx pull-right al-i-c home-links">
                     <li><a href="javascript:;" routerLink="/pricing" routerLinkActive="active">Pricing</a></li>
-                    <!-- <li><a href="http://support.eluzini.com/support/home" target="_blank">Support</a></li> -->
                     <li><a href="javascript:;" routerLink="/contact" routerLinkActive="active">Contact Us</a></li>
-                    <li><a href="javascript:;" routerLink="/login" routerLinkActive="active">Login</a></li>
-                    <li><a href="javascript:;" routerLink="/register" routerLinkActive="active">Register</a></li>
+                    <li><a href="javascript:;" routerLink="/login" routerLinkActive="active"
+                            *ngIf="!isLoggedIn">Login</a></li>
+                    <li><a href="javascript:;" (click)="logout()" *ngIf="isLoggedIn">Logout</a></li>
+                    <li><a href="javascript:;" routerLink="/dashboard" routerLinkActive="active"
+                            class="btn btn-default tt-cap">Dashboard</a></li>
                 </ul>
             </div>
         </div>

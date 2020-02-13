@@ -54,15 +54,19 @@ p, a, label, span{
     line-height: normal;
 }
 .h-border-left{
-    border-left: 2px solid #029EDC;
-    padding-left: 1rem;
+    border-left: 1px solid #029EDC;
+    border-right: 1px solid #029EDC;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 10px;
+    /* padding-left: 1rem; */
 }
 .sec-one{
     padding: 100px 0;
     background: url('/assets/images/bgdone.jpg');
     background-repeat: no-repeat;
-    background-size: auto;
-    background-color: #fff7f4;
+    background-size: contain;
+    /* background-color: #fff7f4; */
     background-position: right;
 }
 .w-4{

@@ -8,6 +8,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ToastrModule } from 'ngx-toastr';
 
 import {
   MatToolbarModule,
@@ -28,6 +29,8 @@ import { PricingComponent } from './website/pricing/pricing.component';
 import { ContactComponent } from './website/contact/contact.component';
 import { DashboardComponent } from './protected/dashboard/dashboard.component';
 import { FormbuilderComponent } from './protected/formbuilder/formbuilder.component';
+import { SidenavComponent } from './protected/sidenav/sidenav.component';
+import { PheaderComponent } from './protected/pheader/pheader.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,9 @@ import { FormbuilderComponent } from './protected/formbuilder/formbuilder.compon
     PricingComponent,
     ContactComponent,
     DashboardComponent,
-    FormbuilderComponent
+    FormbuilderComponent,
+    SidenavComponent,
+    PheaderComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +58,8 @@ import { FormbuilderComponent } from './protected/formbuilder/formbuilder.compon
     MatButtonModule,
     MatCardModule,
     MatProgressSpinnerModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ToastrModule.forRoot(),
   ],
   providers: [AuthGuardService],
   bootstrap: [AppComponent]

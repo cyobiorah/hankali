@@ -8,7 +8,7 @@ interface AppEnv {
 
 export const environment = {
   production: false,
-  base_uri: 'https://hankali.herokuapp.com/v1/'
+  base_uri: 'https://hankali.herokuapp.com/v1/',
 };
 
 /*

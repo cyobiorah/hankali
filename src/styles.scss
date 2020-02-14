@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~ngx-toastr/toastr.css";
+// @import "~bootswatch/dist/cosmo/_variables.scss";
+// @import "~bootswatch/dist/cosmo/_bootswatch.scss";
+@import "~bootstrap/scss/bootstrap.scss";
+$fa-font-path: '../node_modules/font-awesome/fonts';
+@import '~font-awesome/scss/font-awesome';
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

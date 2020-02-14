@@ -9,14 +9,9 @@ import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
-
-import {
-  MatToolbarModule,
-  MatIconModule,
-  MatCardModule,
-  MatButtonModule,
-  MatProgressSpinnerModule
-} from '@angular/material';
+import { FormioModule, FormioAppConfig } from 'angular-formio';
+import { AppConfig } from "./formio-config";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AuthGuardService } from './app.guard';
 
@@ -31,6 +26,9 @@ import { DashboardComponent } from './protected/dashboard/dashboard.component';
 import { FormbuilderComponent } from './protected/formbuilder/formbuilder.component';
 import { SidenavComponent } from './protected/sidenav/sidenav.component';
 import { PheaderComponent } from './protected/pheader/pheader.component';
+
+// const Formio = require('formiojs').Formio;
+// Formio.icons = 'fontawesome';
 
 @NgModule({
   declarations: [
@@ -53,15 +51,15 @@ import { PheaderComponent } from './protected/pheader/pheader.component';
     HttpClientModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     BrowserAnimationsModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-    MatCardModule,
-    MatProgressSpinnerModule,
     ReactiveFormsModule,
+    FormioModule,
+    NgbModule,
     ToastrModule.forRoot(),
   ],
-  providers: [AuthGuardService],
+  providers: [
+    AuthGuardService,
+    { provide: FormioAppConfig, useValue: AppConfig },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

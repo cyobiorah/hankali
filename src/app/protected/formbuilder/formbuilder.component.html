@@ -1,1 +1,51 @@
-<p>formbuilder works!</p>
+<div class="d-flx bg-admin">
+    <app-sidenav></app-sidenav>
+
+    <div class="content-area">
+        <app-pheader></app-pheader>
+
+        <div class="d-flx j-c-sb p-2">
+            <h3>Form Builder</h3>
+        </div>
+
+        <form-builder [form]="{components: []}" (change)="onChange($event)"></form-builder>
+        <div class="well jsonviewer">
+            <pre id="json"><code class="language-json" #json></code></pre>
+        </div>
+
+        <!-- <div class="d-flx pl-2 pr-2 mb-1 column">
+            <div class="cards bg-white c-border d-flx j-c-sb p-1h fl-1 w-4 m-1 card-bg">
+                <div class="al-s-c c-img bg-l-green">
+                    <img src="assets/images/Group2.svg" alt="">
+                </div>
+
+                <div class="fl-1 ml-1 mr-2">
+                    <h3 class="f-title">13</h3>
+                    <p class="text-ash f-default">Total Forms</p>
+                </div>
+            </div>
+
+            <div class="cards bg-white c-border d-flx j-c-sb p-1h fl-1 w-4 m-1 card-bg">
+                <div class="al-s-c c-img bg-l-red">
+                    <img src="assets/images/Group21.svg" alt="">
+                </div>
+
+                <div class="fl-1 ml-1 mr-2">
+                    <h3 class="f-title">15</h3>
+                    <p class="text-ash f-default">Pending Forms</p>
+                </div>
+            </div>
+
+            <div class="cards bg-white c-border d-flx j-c-sb p-1h fl-1 w-4 m-1 card-bg-2">
+                <div class="al-s-c c-img bg-l-green">
+                    <img src="assets/images/Group.svg" alt="">
+                </div>
+
+                <div class="fl-1 ml-1 mr-2">
+                    <h3 class="f-title">100</h3>
+                    <p class="text-ash f-default">Completed Forms</p>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</div>
